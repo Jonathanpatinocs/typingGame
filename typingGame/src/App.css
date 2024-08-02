@@ -1,5 +1,8 @@
-
-App {
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
 
   box-sizing: border-box;
   min-height: 100vh;
@@ -8,4 +11,48 @@ App {
   align-items: center;
   background-color: darksalmon;
 
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 5px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.test {
+  user-select: none;
+}
+
+span {
+    font-size: 20px;
+    user-select: none;
+    cursor: text;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 2px solid red;
+}
+
+button.btn {
+  padding: 5px;
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: gold;
+  color: pink;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+button.btn:hover {
+  background-color: green;
 }

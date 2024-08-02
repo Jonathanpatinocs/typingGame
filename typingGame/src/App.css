@@ -42,7 +42,7 @@ span {
   border-top: 2px solid red;
 }
 
-button.btn {
+button.resetButton {
   padding: 5px;
   outline: none;
   border: 1px solid gray;
@@ -53,6 +53,6 @@ button.btn {
   transition: all 0.5s;
 }
 
-button.btn:hover {
+button.resetButton:hover {
   background-color: green;
 }

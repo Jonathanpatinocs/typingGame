@@ -56,3 +56,10 @@ button.resetButton {
 button.resetButton:hover {
   background-color: green;
 }
+
+
+.testInput {
+  opacity: 0;
+  z-index: -999;  /* Hide test input */
+  position: absolute; 
+}

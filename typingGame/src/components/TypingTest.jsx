@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
+
 
 const TypingTest = () => {
     const testParagraph = "This is a typing test"
@@ -7,7 +8,7 @@ const TypingTest = () => {
     const [mistakes, setMistakes] = useState(0)
     const [wpm, setwmp] = useState(0)
     const [difficulty, setDifficulty] = useState('Easy')
-
+    const inputRef = useRef()
     
     const handleTime = () => {
       setTime()
@@ -15,6 +16,7 @@ const TypingTest = () => {
     return (
       <div className='container'> 
         <div className='test'>
+          <input type="text" className="testInput"  ref={inputRef}/>
           {testParagraph.split("").map((char, index) => (
             <span className='character' key={index}>{char}</span>
           ))}
